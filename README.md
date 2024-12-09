@@ -1,21 +1,23 @@
 # Hash-Function
-My hash function program:
-
-# Custom Hasher with GUI
+A program implementing a custom hash function with an interactive GUI.
 
 ## Project Description
-This program implements a custom hash function using Python. The application uses a user-friendly GUI built with `tkinter`, allowing users to hash inputs, save/load results, and view them interactively.
+This project demonstrates a custom hash function in Python, wrapped in a user-friendly GUI built with `tkinter`. The program allows users to hash inputs, view results, and save/load hashed outputs interactively. It showcases the principles of hashing, GUI design, and file handling.
 
 ## Features
 - **Custom Hash Function**: Processes any string input and generates a deterministic 8-character hash.
-- **Predefined Test Cases**: Runs various inputs to demonstrate the hash function's capabilities.
-- **Interactive GUI**: Add custom inputs, view results, and toggle dark mode.
-- **JSON Integration**: Save results to and load them from JSON files, supporting dynamic file selection.
+- **Predefined Test Cases**: Runs various test inputs to demonstrate the hash function's capabilities.
+- **Interactive GUI**:
+  - Add custom inputs and view their hashes.
+  - Toggle between light and dark modes.
+- **JSON Integration**:
+  - Save hashed results to JSON files.
+  - Load hashed results from any JSON file.
 - **Dark Mode**: Offers a visually appealing alternative to the default light theme.
 
 ## Requirements
-- Python 
-- `tkinter` (included in standard Python library)
+- Python
+- `tkinter` (included in the standard Python library)
 
 ## How to Run
 1. Clone this repository.
