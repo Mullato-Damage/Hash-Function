@@ -44,7 +44,7 @@ howdyyall	    &nbsp; &nbsp; 7                   &nbsp; &nbsp; &nbsp; &nbsp; 1107
 
 😊🎉	         &nbsp; &nbsp; &nbsp; &nbsp; 8                  &nbsp; &nbsp; &nbsp; &nbsp; 8254
 
-![image](https://github.com/user-attachments/assets/1c2297ed-8aaf-45e8-893b-5c859c36a619)
+![image](https://github.com/user-attachments/assets/3e045645-3a4d-4005-9b66-7839586b6c2e)
 
 ## Features in Action
 1. **Preloaded Test Cases**:
