@@ -2,18 +2,26 @@
 A program implementing a custom hash function with an interactive GUI.
 
 ## Project Description
-This project demonstrates a custom hash function in Python, wrapped in a user-friendly GUI built with `tkinter`. The program allows users to hash inputs, view results, and save/load hashed outputs interactively. It showcases the principles of hashing, GUI design, and file handling.
+This project demonstrates a custom hash function in Python, wrapped in a user-friendly GUI built with tkinter. The program allows users to hash inputs, view results, and save/load hashed outputs interactively. It showcases the principles of hashing, GUI design, and file handling, while also visualizing how hash tables resolve collisions.
 
 ## Features
-- **Custom Hash Function**: Processes any string input and generates a deterministic 8-character hash.
-- **Predefined Test Cases**: Runs various test inputs to demonstrate the hash function's capabilities.
-- **Interactive GUI**:
-  - Add custom inputs and view their hashes.
-  - Toggle between light and dark modes.
-- **JSON Integration**:
-  - Save hashed results to JSON files.
-  - Load hashed results from any JSON file.
-- **Dark Mode**: Offers a visually appealing alternative to the default light theme.
+**Hash Table and Hash Function**
+- **Custom Hash Function**:
+  - Combines input text with a "salt" value for randomness.
+  - Computes the hash as the sum of Unicode values of all characters, modulo the table size.
+  - Maps the hash to a specific index in the hash table.
+- **Collision Handling**:
+  - Uses chaining to store multiple key-value pairs at the same index when collisions occur.
+
+**Interactive GUI**
+   - Add your own inputs and view how they are hashed and stored in the table.
+   - Predefined test cases run on startup to demonstrate functionality.
+   - View debug information to understand how raw hash values and indices are computed.
+   - Toggle between light mode and dark mode for visual comfort.
+
+**JSON Integration**
+  - Save the current state of the hash table to a JSON file.
+  - Load hash table data from any JSON file to restore previously saved results.
 
 ## Requirements
 - Python
@@ -28,16 +36,27 @@ This project demonstrates a custom hash function in Python, wrapped in a user-fr
 
 ## Example Outputs
 
-Input  	    Hashed Output
+Input  	      &nbsp; &nbsp; Hashed Index      	  &nbsp; &nbsp; Raw Hash
 
-HowdyYall	  44780926
+HowdyYall	    &nbsp; &nbsp; 0                   &nbsp; &nbsp; &nbsp; &nbsp; 1103
 
-howdyyall	  77924990
+howdyyall	    &nbsp; &nbsp; 7                   &nbsp; &nbsp; &nbsp; &nbsp; 1107
 
-😊🎉	      82544278
+😊🎉	         &nbsp; &nbsp; &nbsp; &nbsp; 8                  &nbsp; &nbsp; &nbsp; &nbsp; 8254
 
 ![image](https://github.com/user-attachments/assets/1c2297ed-8aaf-45e8-893b-5c859c36a619)
 
+## Features in Action
+1. **Preloaded Test Cases**:
+  - On startup, the hash table automatically loads predefined test cases and shows the current state of the table.
+2. **Add Your Own Inputs**:
+  - Interactively add inputs to the table and view how they’re stored.
+3. **Save/Load Results**:
+  - Save the current hash table to a JSON file and restore it later.
 
 ## Acknowledgments
-This project reflects an effort to learn and apply hash functions with practical enhancements, such as a GUI interface, JSON integration, and aesthetic customization.
+This project reflects an effort to learn and apply 
+- Hash functions and their integration with hash tables.
+- Collision handling in hash tables using chaining.
+- GUI design principles for creating an interactive experience.
+- JSON integration for saving and loading data persistently.
